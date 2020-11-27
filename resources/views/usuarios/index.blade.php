@@ -14,7 +14,6 @@
              <th>ID</th>
             <th>Usuario</th>
             <th>Email</th>
-            <th>Password</th>
             <th>Fecha</th>
             <th>Editar</th>
             <th>Eliminar</th>
@@ -25,7 +24,6 @@
                 <td>{{$User -> id}}</td>
                 <td>{{$User -> name}}</td>
                 <td>{{$User -> email}}</td>
-                <td>{{$User -> password}}</td>
                 <td>{{$User -> created_at}}</td>
                 <td>
                   <a href="{{route('usuarios.edit', $User->id)}}"><button class=" btn btn-success btn-fab btn-round ">EDITAR</button> </a>

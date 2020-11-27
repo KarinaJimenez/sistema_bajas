@@ -40,8 +40,11 @@
             <td>{{$alumno -> carrera ->carrera}}</td>
             <td>{{$alumno -> solicitude -> solicitud}} </td>
             <td>{{$alumno -> created_at}}</td>
-            <td>{{$alumno->Dominio}}</td>
-            <td>{{$alumno->Moodle}}</td>
+            <td>@if($alumno->Dominio==1)<img src="/img/palomita.png"/>
+                @else<img src="/img/tache.png"/> @endif</td>
+            <td>@if($alumno->Moodle==1) <img src="/img/palomita.png"/>
+                 @else<img src="/img/tache.png"/> @endif
+ </td>
 
             <td>
                 <a href="{{route('alumnos.edit', $alumno->id)}}"><button class=" btn btn-success btn-fab btn-round ">EDITAR</button> </a>
@@ -51,7 +54,7 @@
             method="POST" onsubmit=" return confirm('¿Esta seguro de Eliminar el alumno {{$alumno->nombre}}')">
             <input name="_method" type="hidden" value="DELETE">
             {{ csrf_field() }}
-            <button type="submit" class=" btn btn-danger" btn-fabb btn-round>Eliminar</button>
+            <button type="submit" class=" btn btn-danger" btn-fabb btn-round >Eliminar</button>
              </form>
                 </td>
                 </tr>

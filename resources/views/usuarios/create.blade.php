@@ -37,7 +37,7 @@
           
             <div class="form-group col-md-4">
                 <label for="password">Password</label>
-                <input type="text" class="form-control {!! $errors->first('password','has-danger')!!}" name="password" placeholder="Escribe un password">
+                <input type="password" class="form-control {!! $errors->first('password','has-danger')!!}" name="password" placeholder="Escribe un password">
                 <span class="form-control-feedback"></span>
                 <small style="color:red">{!!$errors->first('password')!!}</small>
             </div>
