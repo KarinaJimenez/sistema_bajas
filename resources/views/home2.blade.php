@@ -35,6 +35,12 @@
               </h4> 
               <h5>{{$alumno->nombre}} {{$alumno->aPaterno}} {{$alumno->aMaterno}}</h5>
               <h5>{{$alumno->carrera->carrera}}</h5>
+              <h5><b>Dominio</b>
+              <td>@if($alumno->Dominio==1)<img src="/img/Dominio.png"/>
+                @else<img src="/img/tache.png"/> @endif</td>
+              <b>Moodle</b>
+              <td>@if($alumno->Moodle==1) <img src="/img/Moodle.png"/>
+                 @else<img src="/img/tache.png"/> @endif </h5>
               
             </div>
             <div class="card-footer">

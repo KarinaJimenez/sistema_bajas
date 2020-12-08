@@ -17,6 +17,7 @@ class Alumno extends Model
         'ciclos_id',
         'carreras_id',
         'solicitudes_id',
+        'motivos_id',
         'Dominio',
         'Moodle'
     ];
